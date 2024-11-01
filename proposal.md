@@ -1,1 +1,1 @@
-[View Breakout Storyboarding PDF](breakout_storyboarding.pdf)
+[Storyboard](story-board.pdf)
