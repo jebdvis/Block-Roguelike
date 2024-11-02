@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PieceData" load_steps=2 format=3 uid="uid://cniw8kisnmf8m"]
+
+[ext_resource type="Script" path="res://Scripts/piece_data.gd" id="1_7mwjk"]
+
+[resource]
+script = ExtResource("1_7mwjk")
+shape_type = 0
+spawn_position = Vector2(0, 0)

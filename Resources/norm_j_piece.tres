@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PieceData" load_steps=3 format=3 uid="uid://d2xu0dbndo43b"]
+
+[ext_resource type="Script" path="res://Scripts/piece_data.gd" id="1_5cqmw"]
+[ext_resource type="Texture2D" uid="uid://vumcbig1nimh" path="res://Assets/Blue.png" id="1_syvrp"]
+
+[resource]
+script = ExtResource("1_5cqmw")
+piece_texture = ExtResource("1_syvrp")
+shape_type = 3
+spawn_position = Vector2(-24, -456)
