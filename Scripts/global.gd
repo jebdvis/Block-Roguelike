@@ -4,7 +4,6 @@ enum Shape{
 	I,O,T,J,L,S,Z
 }
 
-
 var cells = {
 	Shape.I: [Vector2(-1, 0), Vector2(0, 0), Vector2(1, 0), Vector2(2, 0)],
 #-------------------------------------------------------------------
@@ -44,13 +43,13 @@ var wall_kicks_jlostz = [
 ]
 
 var data = {
-	Shape.I: preload("res://Resources/i_piece_data.tres"),
-	Shape.J: preload("res://Resources/j_piece_data.tres"),
-	Shape.L: preload("res://Resources/l_piece_data.tres"),
-	Shape.O: preload("res://Resources/o_piece_data.tres"),
-	Shape.S: preload("res://Resources/s_piece_data.tres"),
-	Shape.T: preload("res://Resources/t_piece_data.tres"),
-	Shape.Z: preload("res://Resources/z_piece_data.tres")
+	Shape.I: preload("res://Resources/norm_i_piece.tres"),
+	Shape.J: preload("res://Resources/norm_j_piece.tres"),
+	Shape.L: preload("res://Resources/norm_L_piece.tres"),
+	Shape.O: preload("res://Resources/norm_o_piece.tres"),
+	Shape.S: preload("res://Resources/norm_s_piece.tres"),
+	Shape.T: preload("res://Resources/norm_T_piece.tres"),
+	Shape.Z: preload("res://Resources/norm_z_piece.tres")
 }
 
 var clockwise_rotation_matrix = [Vector2(0, -1), Vector2(1, 0)]

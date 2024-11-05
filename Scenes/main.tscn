@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8knbry5viopd"]
+[gd_scene load_steps=7 format=3 uid="uid://c8knbry5viopd"]
 
 [ext_resource type="Texture2D" uid="uid://bol5ul1fw3sqg" path="res://Assets/Border.png" id="1_h65x5"]
 [ext_resource type="Texture2D" uid="uid://dgb4og3ue6xhn" path="res://Assets/Grid.png" id="2_1mp6p"]
+[ext_resource type="Script" path="res://Scripts/piece_spawner.gd" id="3_ns6it"]
+[ext_resource type="Script" path="res://Scripts/board.gd" id="4_n18o6"]
+[ext_resource type="PackedScene" uid="uid://ugv2vn4dgqr2" path="res://Scenes/shape.tscn" id="5_n7ki2"]
+[ext_resource type="PackedScene" uid="uid://dwevh1jdlnn4q" path="res://Scenes/ui.tscn" id="6_osds7"]
 
 [node name="Main" type="Node"]
 
@@ -31,3 +35,24 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_1mp6p")
 stretch_mode = 1
+
+[node name="board" type="Node" parent="."]
+script = ExtResource("4_n18o6")
+shape_scene = ExtResource("5_n7ki2")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_left = -100.0
+offset_top = -631.0
+offset_right = 100.0
+offset_bottom = -531.0
+
+[node name="Label" type="Label" parent="PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "NEXT SHAPE:"
+horizontal_alignment = 1
+
+[node name="piece_spawner" type="Node" parent="."]
+script = ExtResource("3_ns6it")
+
+[node name="UI" parent="." instance=ExtResource("6_osds7")]
