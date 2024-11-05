@@ -14,7 +14,7 @@ var shape_data
 var is_next_piece
 var shape_cells
 var pieces = []
-var other_shapes: Array[Shape] = []
+var other_shape_pieces: = []
 var rotation_index = 0
 var ghost_shape
 
@@ -105,12 +105,10 @@ func is_within_game_bounds(direction:Vector2, starting_global_pos: Vector2):
 	return true
 	
 func is_colliding_with_shapes(direction:Vector2, starting_global_pos: Vector2):
-	for shape in other_shapes:
-		var shape_pieces = shape.get_children().filter(func(c): return c is Piece)
-		for shape_piece in shape_pieces:
-			for piece in pieces:
-				if starting_global_pos + piece.position + direction * piece.get_size().x == shape.global_position + shape_piece.position:
-					return true
+	for shape_piece in other_shape_pieces:
+		for piece in pieces:
+			if starting_global_pos + piece.position + direction * piece.get_size() == shape_piece.global_position:
+				return true
 	return false
 	
 	

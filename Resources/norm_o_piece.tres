@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="PieceData" load_steps=2 format=3 uid="uid://cniw8kisnmf8m"]
+[gd_resource type="Resource" script_class="PieceData" load_steps=3 format=3 uid="uid://g06rem2fbu2b"]
 
-[ext_resource type="Script" path="res://Scripts/piece_data.gd" id="1_7mwjk"]
+[ext_resource type="Texture2D" uid="uid://hh4aratveget" path="res://Assets/Yellow.png" id="1_dggvb"]
+[ext_resource type="Script" path="res://Scripts/piece_data.gd" id="2_r5dde"]
 
 [resource]
-script = ExtResource("1_7mwjk")
-shape_type = 0
-spawn_position = Vector2(0, 0)
+script = ExtResource("2_r5dde")
+piece_texture = ExtResource("1_dggvb")
+shape_type = 1
+spawn_position = Vector2(-24, -456)
