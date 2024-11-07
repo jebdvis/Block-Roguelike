@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "76f5076abcfe29e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1aa33f65cf45869",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04109b2a2454c1da",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4d26ab12ec973c5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "c63d799e64939d4b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15efd81649eafc65",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b8eae3fb22bfd528",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "98842d16ccf3b2b4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0be3f40986b18ed2",
+    "type": "split",
+    "children": [
+      {
+        "id": "a50174948936b023",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05bd4996c0c04836",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "mechanics/Conditionals for blocks to work(Are these attached to the blocks when acquired or player attached).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Conditionals for blocks to work(Are these attached to the blocks when acquired or player attached)"
+            }
+          },
+          {
+            "id": "9342366467720ae7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "mechanics/Conditionals for blocks to work(Are these attached to the blocks when acquired or player attached).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Conditionals for blocks to work(Are these attached to the blocks when acquired or player attached)"
+            }
+          },
+          {
+            "id": "46e747899685a3e5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8fa00d1136df2a2c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "mechanics/Conditionals for blocks to work(Are these attached to the blocks when acquired or player attached).md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Conditionals for blocks to work(Are these attached to the blocks when acquired or player attached)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "04109b2a2454c1da",
+  "lastOpenFiles": [
+    "mechanics/Conditionals for blocks to work(Are these attached to the blocks when acquired or player attached).md",
+    "blocks/Explosion Radius.md",
+    "blocks/Flip Board Upside Down.md",
+    "Untitled.md",
+    "mechanics",
+    "blocks"
+  ]
+}

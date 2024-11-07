@@ -1,0 +1,3 @@
+- Landing a block at the end of a set streak of various line clears(after getting a single, double, and landing the piece on a triple)
+- Landing the special block in a shape of some colors
+- General if a certain amount of lines are cleared
