@@ -10,7 +10,7 @@ const COL_COUNT = 10
 var next_shape
 var shapes: Array[Shape] = []
 @export var shape_scene: PackedScene
-@onready var panel_container = $"../PanelContainer"
+@onready var nextShape = $"../NextShape"
 @onready var line_scene = preload("res://Scenes/line.tscn")
 
 
@@ -30,7 +30,7 @@ func spawn_shape(type: Global.Shape, is_next_piece, spawn_position):
 		shape.lock_shape.connect(on_shape_locked)
 	else:
 		shape.scale = Vector2(0.5,0.5)
-		panel_container.add_child(shape)
+		nextShape.add_child(shape)
 		shape.set_position(spawn_position)
 		next_shape = shape
 

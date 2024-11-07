@@ -11,10 +11,14 @@
             "id": "04109b2a2454c1da",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "blocks/Block That Removes Adjacent Blocks with Similar Color.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Block That Removes Adjacent Blocks with Similar Color"
             }
           }
         ]
@@ -160,6 +164,10 @@
   },
   "active": "04109b2a2454c1da",
   "lastOpenFiles": [
+    "blocks/Removes Blocks Vertivally Under and Above Block.md",
+    "blocks/Block That Removes Adjacent Blocks with Similar Color.md",
+    "blocks/Makes Next Few Blocks Only Hard Drop.md",
+    "blocks/Removes Blocks Under Block.md",
     "mechanics/Conditionals for blocks to work(Are these attached to the blocks when acquired or player attached).md",
     "blocks/Explosion Radius.md",
     "blocks/Flip Board Upside Down.md",

@@ -60,7 +60,8 @@ func hard_drop_ghost():
 			var piece_position = children[i].position
 			pieces_position.append(piece_position)
 			
-		ghost_shape.set_ghost_shape(final_hard_drop_position,pieces_position)
+		if pieces_position.size() == pieces.size():
+			ghost_shape.set_ghost_shape(final_hard_drop_position, pieces_position)
 		
 	return final_hard_drop_position
 
@@ -77,6 +78,8 @@ func _input(_event):
 		rotate_shape(1)
 	elif Input.is_action_just_pressed("rotate_right"):
 		rotate_shape(-1)
+	elif Input.is_action_just_pressed("hold"):
+		 
 		
 		
 func move(direction: Vector2) -> bool:

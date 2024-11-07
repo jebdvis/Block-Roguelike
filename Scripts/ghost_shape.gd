@@ -24,4 +24,4 @@ func set_ghost_shape(new_position: Vector2, pieces_position):
 	
 	var pieces = get_children()
 	for i in pieces.size():
-		pieces[i].podsition = pieces_position[i]
+		pieces[i].position = pieces_position[i]

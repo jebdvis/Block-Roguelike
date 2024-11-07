@@ -40,16 +40,28 @@ stretch_mode = 1
 script = ExtResource("4_n18o6")
 shape_scene = ExtResource("5_n7ki2")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
-offset_left = -100.0
-offset_top = -631.0
-offset_right = 100.0
-offset_bottom = -531.0
+[node name="NextShape" type="PanelContainer" parent="."]
+offset_left = -245.0
+offset_top = -626.0
+offset_right = -45.0
+offset_bottom = -526.0
 
-[node name="Label" type="Label" parent="PanelContainer"]
+[node name="Label" type="Label" parent="NextShape"]
 layout_mode = 2
 size_flags_vertical = 0
 text = "NEXT SHAPE:"
+horizontal_alignment = 1
+
+[node name="HoldShape" type="PanelContainer" parent="."]
+offset_left = 38.0
+offset_top = -626.0
+offset_right = 238.0
+offset_bottom = -526.0
+
+[node name="Label" type="Label" parent="HoldShape"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "HOLD SHAPE:"
 horizontal_alignment = 1
 
 [node name="piece_spawner" type="Node" parent="."]
