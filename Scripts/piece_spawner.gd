@@ -17,6 +17,7 @@ func _ready() ->void:
 	board.game_over.connect(on_game_over)
 
 
+#Checks if game is over; if not, sets the next shape to current shape and sets new next image
 func on_shape_locked():
 	if is_game_over:
 		return

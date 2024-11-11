@@ -1,0 +1,1 @@
+removes all blocks that have the same x location in array

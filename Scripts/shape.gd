@@ -3,7 +3,6 @@ class_name Shape
 
 signal lock_shape(shape:Shape)
 
-
 var bounds = {
 	"min_x" = -216,
 	"max_x" = 216,
@@ -79,7 +78,8 @@ func _input(_event):
 	elif Input.is_action_just_pressed("rotate_right"):
 		rotate_shape(-1)
 	elif Input.is_action_just_pressed("hold"):
-		 
+		#TODO create a hold function(ui element exists) can probably use similar function to how next_piece works
+		pass
 		
 		
 func move(direction: Vector2) -> bool:
@@ -174,7 +174,7 @@ func lock():
 	ghost_shape.queue_free()
 
 func _on_timer_timeout():
-	#TODO timer decreses as points become greater
+	#TODO timer decreses as points become greater(makes game faster)
 	var should_lock = !move(Vector2.DOWN)
 	if should_lock:
 		lock()

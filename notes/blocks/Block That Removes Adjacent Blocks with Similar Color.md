@@ -1,0 +1,1 @@
+New Array that stores all spaces that are adjacent to piece and have the same sprite type/color.

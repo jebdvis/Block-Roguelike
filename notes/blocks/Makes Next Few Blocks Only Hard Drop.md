@@ -1,0 +1,1 @@
+Turn off timer on pieces so they can only be hard dropped

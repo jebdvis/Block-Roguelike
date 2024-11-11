@@ -7,7 +7,7 @@ signal game_over
 const ROW_COUNT = 20
 const COL_COUNT = 10
 
-var next_shape
+var next_shape #is the representation of the next shape on the ui, not the actual next shape object
 var shapes: Array[Shape] = []
 @export var shape_scene: PackedScene
 @onready var nextShape = $"../NextShape"
@@ -43,8 +43,9 @@ func on_shape_locked(shape: Shape):
 	shape_locked.emit()
 	check_game_over()
 	
+	#checks if pieces are above the board, if so the game ends
+	#TODO queue_free pieces above the top of board to make end game look cleaner 
 func check_game_over():
-	
 	for piece in get_all_pieces():
 		var y_location = piece.global_position.y
 		if y_location == -456:

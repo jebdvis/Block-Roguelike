@@ -1,0 +1,1 @@
+removes all blocks that are below the y location of the block
