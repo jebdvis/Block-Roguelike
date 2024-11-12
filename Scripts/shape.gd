@@ -110,9 +110,10 @@ func is_within_game_bounds(direction:Vector2, starting_global_pos: Vector2):
 	
 func is_colliding_with_shapes(direction:Vector2, starting_global_pos: Vector2):
 	for shape_piece in other_shape_pieces:
-		for piece in pieces:
-			if starting_global_pos + piece.position + direction * piece.get_size() == shape_piece.global_position:
-				return true
+		if is_instance_valid(shape_piece):
+			for piece in pieces:
+				if starting_global_pos + piece.position + direction * piece.get_size() == shape_piece.global_position:
+					return true
 	return false
 	
 	
