@@ -29,6 +29,7 @@ func spawn_shape(type: Global.Shape, is_next_piece, spawn_position):
 		shape.other_shape_pieces = other_pieces
 		add_child(shape)
 		shape.lock_shape.connect(on_shape_locked)
+		shape.effect.effect_on_spawn(shape,self)
 	else:
 		shape.scale = Vector2(0.5,0.5)
 		nextShape.add_child(shape)
@@ -73,12 +74,6 @@ func add_shape_to_lines(shape: Shape):
 	
 func get_lines():
 	return get_children().filter(func (c): return c is Line)
-	
-#func remove_full_lines():
-	#for line in get_lines():
-		#if line.is_line_full(COL_COUNT):
-			#move_lines_down(line.global_position.y)
-			#line.free()
 			
 func move_lines_down(y_position):
 	for line in get_lines():

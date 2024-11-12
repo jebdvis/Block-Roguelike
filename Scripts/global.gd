@@ -53,7 +53,8 @@ var data = {
 }
 
 var effect_list = {
-	normal_effect: preload("res://Resources/effects/normal_effect.tres")
+	normal_effect: preload("res://Resources/effects/normal_effect.tres"),
+	explode_effect: preload("res://Resources/effects/explode_effect.tres")
 }
 
 var clockwise_rotation_matrix = [Vector2(0, -1), Vector2(1, 0)]

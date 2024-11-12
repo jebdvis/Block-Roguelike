@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mechanics/Points for clearing blocks.md",
+                "file": "blocks/Explosion Radius.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Points for clearing blocks"
+              "title": "Explosion Radius"
             }
           }
         ]
@@ -165,12 +165,12 @@
   },
   "active": "04109b2a2454c1da",
   "lastOpenFiles": [
-    "blocks/Removes Blocks Under Block.md",
+    "blocks/Flip Board Upside Down.md",
     "mechanics/Points for clearing blocks.md",
+    "blocks/Removes Blocks Under Block.md",
     "Untitled.canvas",
     "blocks/Removes Blocks Vertivally Under and Above Block.md",
     "blocks/Makes Next Few Blocks Only Hard Drop.md",
-    "blocks/Flip Board Upside Down.md",
     "blocks/Explosion Radius.md",
     "blocks/Block That Removes Adjacent Blocks with Similar Color.md",
     "mechanics/Conditionals for blocks to work(Are these attached to the blocks when acquired or player attached).md",

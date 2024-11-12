@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="explode_effect" load_steps=2 format=3 uid="uid://cthblm8i6b6qm"]
+
+[ext_resource type="Script" path="res://Scripts/effect_scripts/explode_effect.gd" id="1_7j074"]
+
+[resource]
+script = ExtResource("1_7j074")
