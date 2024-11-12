@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="normal_effect" load_steps=2 format=3 uid="uid://dwc2axec412lj"]
+
+[ext_resource type="Script" path="res://Scripts/effect_scripts/normal_effect.gd" id="1_v5sbi"]
+
+[resource]
+script = ExtResource("1_v5sbi")

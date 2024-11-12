@@ -16,6 +16,7 @@ var pieces = []
 var other_shape_pieces: = []
 var rotation_index = 0
 var ghost_shape
+var effect: Effect
 
 @onready var piece_scene = preload("res://Scenes/piece.tscn")
 @onready var timer = $Timer

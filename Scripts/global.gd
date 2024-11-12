@@ -52,5 +52,9 @@ var data = {
 	Shape.Z: preload("res://Resources/norm_z_piece.tres")
 }
 
+var effect_list = {
+	normal_effect: preload("res://Resources/effects/normal_effect.tres")
+}
+
 var clockwise_rotation_matrix = [Vector2(0, -1), Vector2(1, 0)]
 var counter_clockwise_rotation_matrix = [Vector2(0,1), Vector2(-1, 0)]

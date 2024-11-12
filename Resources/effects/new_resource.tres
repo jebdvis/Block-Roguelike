@@ -1,6 +1,0 @@
-[gd_resource type="Resource" script_class="Test" load_steps=2 format=3 uid="uid://cpwk7454j8xcw"]
-
-[ext_resource type="Script" path="res://Scripts/effect_scripts/test-effect.gd" id="1_h7b5g"]
-
-[resource]
-script = ExtResource("1_h7b5g")

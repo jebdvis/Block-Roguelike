@@ -17,10 +17,11 @@ var shapes: Array[Shape] = []
 func spawn_shape(type: Global.Shape, is_next_piece, spawn_position):
 	var shape_data = Global.data[type]
 	var shape = shape_scene.instantiate() as Shape
+	var shape_effect = Global.effect_list.values().pick_random()
 	
 	shape.shape_data = shape_data
 	shape.is_next_piece = is_next_piece
-	
+	shape.effect = shape_effect
 	
 	if is_next_piece == false:
 		var other_pieces = get_all_pieces()
@@ -39,7 +40,7 @@ func on_shape_locked(shape: Shape):
 	next_shape.queue_free()
 	shapes.append(shape)
 	add_shape_to_lines(shape)
-	remove_full_lines()
+	shape.effect.effect_on_land(shape,self)
 	shape_locked.emit()
 	check_game_over()
 	
@@ -73,16 +74,21 @@ func add_shape_to_lines(shape: Shape):
 func get_lines():
 	return get_children().filter(func (c): return c is Line)
 	
-func remove_full_lines():
-	for line in get_lines():
-		if line.is_line_full(COL_COUNT):
-			move_lines_down(line.global_position.y)
-			line.free()
+#func remove_full_lines():
+	#for line in get_lines():
+		#if line.is_line_full(COL_COUNT):
+			#move_lines_down(line.global_position.y)
+			#line.free()
 			
 func move_lines_down(y_position):
 	for line in get_lines():
 		if line.global_position.y < y_position:
 			line.global_position.y += 48
+			
+func move_pieces_down(y_position):
+	#TODO move pieces individually down; add pieces to new lines
+	for line in get_lines():
+		pass
 			
 func get_all_pieces():
 	var pieces = []

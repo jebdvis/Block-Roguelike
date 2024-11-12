@@ -9,6 +9,7 @@ var is_game_over = false
 
 
 func _ready() ->void:
+	#HACK configure way to have weighted randomness for random effects and pieces(while testing)
 	current_shape = Global.Shape.values().pick_random()
 	next_shape = Global.Shape.values().pick_random()
 	board.spawn_shape(current_shape, false, null)
