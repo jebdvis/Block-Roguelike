@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="hard_drop_effect" load_steps=2 format=3 uid="uid://ctgg6d5u633r7"]
+
+[ext_resource type="Script" path="res://Scripts/effect_scripts/hard_drop_effect.gd" id="1_p4f68"]
+
+[resource]
+script = ExtResource("1_p4f68")
