@@ -64,6 +64,23 @@ size_flags_vertical = 0
 text = "HOLD SHAPE:"
 horizontal_alignment = 1
 
+[node name="Effect" type="PanelContainer" parent="."]
+offset_left = 288.0
+offset_top = -459.0
+offset_right = 488.0
+offset_bottom = -359.0
+
+[node name="Label" type="Label" parent="Effect"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "SHAPE EFFECT:"
+horizontal_alignment = 1
+
+[node name="effect_label" type="Label" parent="Effect"]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 3
+
 [node name="piece_spawner" type="Node" parent="."]
 script = ExtResource("3_ns6it")
 

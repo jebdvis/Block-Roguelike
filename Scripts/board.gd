@@ -9,7 +9,6 @@ const COL_COUNT = 10
 
 var next_shape #is the representation of the next shape on the ui, not the actual next shape object
 var shapes: Array[Shape] = []
-var timer_len: float = 1.0
 @export var shape_scene: PackedScene
 @onready var nextShape = $"../NextShape"
 @onready var line_scene = preload("res://Scenes/line.tscn")
@@ -18,13 +17,13 @@ var timer_len: float = 1.0
 func spawn_shape(type: Global.Shape, is_next_piece, spawn_position):
 	var shape_data = Global.data[type]
 	var shape = shape_scene.instantiate() as Shape
+	print(shape.effect)
 	var shape_effect = Global.effect_list.values().pick_random()
 	
 	shape.shape_data = shape_data
 	shape.is_next_piece = is_next_piece
-	if !shape.effect:
+	if shape.effect == null:
 		shape.effect = shape_effect
-	shape.get_node('Timer').wait_time = timer_len
 	
 	if is_next_piece == false:
 		var other_pieces = get_all_pieces()
@@ -33,6 +32,7 @@ func spawn_shape(type: Global.Shape, is_next_piece, spawn_position):
 		add_child(shape)
 		shape.lock_shape.connect(on_shape_locked)
 		shape.effect.effect_on_spawn(shape,self)
+		$"../Effect/effect_label".text = shape.effect.effect_name
 	else:
 		shape.scale = Vector2(0.5,0.5)
 		nextShape.add_child(shape)
@@ -95,5 +95,4 @@ func get_all_pieces():
 	return pieces
 	
 func get_effect(effect_name):
-	print(Global.effect_list[effect_name])
 	return Global.effect_list.get(effect_name)

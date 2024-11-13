@@ -1,6 +1,8 @@
 extends Effect
 class_name explode_effect
 
+var effect_name = "explode_effect"
+
 var radius:int = 2
 var min_full_lines:int = 2
 
